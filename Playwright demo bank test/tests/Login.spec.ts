@@ -6,8 +6,16 @@ test.describe("User login to Demobank", () => {
     await page.getByTestId("login-input").fill("olatoja1");
     await page.getByTestId("password-input").fill("mnjhbvgf");
     await page.getByTestId("login-button").click();
-    
 
+
+
+
+
+
+
+
+
+    
     await expect(page.getByTestId("user-name")).toHaveText("Jan Demobankowy");
   });
 
